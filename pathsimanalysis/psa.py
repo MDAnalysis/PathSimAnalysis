@@ -1490,7 +1490,7 @@ class PSAnalysis(object):
         indexed according to distance vector convention (i.e., element *(i,j)*
         in distance matrix representation corresponds to element
         :math:`s=N*i+j-(i+1)*(i+2)` in distance vector representation, which is
-        the :math:`s^\text{th}` comparison). For each unique pair of paths, the
+        the :math:`s`:sup:`th` comparison). For each unique pair of paths, the
         nearest neighbors for that pair can be stored in :attr:`NN` and the
         Hausdorff pair in :attr:`HP`. :attr:`PP` stores the full information
         of Hausdorff pairs analysis that is available for each pair of path,
