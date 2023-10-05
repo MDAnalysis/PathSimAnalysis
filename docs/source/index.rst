@@ -6,6 +6,8 @@
 Welcome to PathSimAnalysis's documentation!
 =========================================================
 
+PathSimAnalysis is an MDAnalysis based analysis package for calculating the similarity between molecular dynamics trajectories.
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
