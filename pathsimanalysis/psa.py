@@ -25,10 +25,6 @@ r"""
 Calculating path similarity --- :mod:`pathsimanalysis.psa`
 ==========================================================================
 
-:Author: Sean Seyler
-:Year: 2015
-:Copyright: GNU Public License v3
-
 .. versionadded:: 0.10.0
 
 The module contains code to calculate the geometric similarity of trajectories
@@ -88,11 +84,11 @@ Classes, methods, and functions
 
    .. attribute:: u_original
 
-      :class:`MDAnalysis.Universe` object with a trajectory
+      :class:`~MDAnalysis.Universe` object with a trajectory
 
    .. attribute:: u_reference
 
-      :class:`MDAnalysis.Universe` object containing a reference structure
+      :class:`~MDAnalysis.Universe` object containing a reference structure
 
    .. attribute:: select
 
@@ -112,7 +108,7 @@ Classes, methods, and functions
 
    .. attribute:: u_fitted
 
-      :class:`MDAnalysis.Universe` object with the fitted trajectory
+      :class:`~MDAnalysis.Universe` object with the fitted trajectory
 
    .. attribute:: path
 
@@ -386,7 +382,7 @@ def hausdorff(P, Q):
      >>> import MDAnalysis as mda
      >>> import numpy
      >>> from MDAnalysis.tests.datafiles import PSF, DCD
-     >>> from MDAnalysis.analysis import psa
+     >>> import pathsimanalysis as psa
      >>> u = mda.Universe(PSF,DCD)
      >>> mid = int(len(u.trajectory)/2)
      >>> ca = u.select_atoms('name CA')
@@ -453,7 +449,7 @@ def hausdorff_wavg(P, Q):
      >>> import MDAnalysis as mda
      >>> from MDAnalysis import Universe
      >>> from MDAnalysis.tests.datafiles import PSF, DCD
-     >>> from MDAnalysis.analysis import psa
+     >>> import pathsimanalysis as psa
      >>> u = mda.Universe(PSF,DCD)
      >>> mid = int(len(u.trajectory)/2)
      >>> ca = u.select_atoms('name CA')
@@ -511,7 +507,7 @@ def hausdorff_avg(P, Q):
 
      >>> import MDAnalysis as mda
      >>> from MDAnalysis.tests.datafiles import PSF, DCD
-     >>> from MDAnalysis.analysis import psa
+     >>> import pathsimanalysis as psa
      >>> u = mda.Universe(PSF,DCD)
      >>> mid = int(len(u.trajectory)/2)
      >>> ca = u.select_atoms('name CA')
@@ -610,7 +606,7 @@ def discrete_frechet(P, Q):
      >>> import MDAnalysis as mda
      >>> import numpy as np
      >>> from MDAnalysis.tests.datafiles import PSF, DCD
-     >>> from MDAnalysis.analysis import psa
+     >>> import pathsimanalysis as psa
      >>> u = mda.Universe(PSF,DCD)
      >>> mid = int(len(u.trajectory)/2)
      >>> ca = u.select_atoms('name CA')
@@ -1494,7 +1490,7 @@ class PSAnalysis(object):
         indexed according to distance vector convention (i.e., element *(i,j)*
         in distance matrix representation corresponds to element
         :math:`s=N*i+j-(i+1)*(i+2)` in distance vector representation, which is
-        the :math:`s^\text{th}` comparison). For each unique pair of paths, the
+        the :math:`s`:sup:`th` comparison). For each unique pair of paths, the
         nearest neighbors for that pair can be stored in :attr:`NN` and the
         Hausdorff pair in :attr:`HP`. :attr:`PP` stores the full information
         of Hausdorff pairs analysis that is available for each pair of path,

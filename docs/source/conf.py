@@ -53,8 +53,11 @@ extensions = [
     "sphinx.ext.napoleon",
     "sphinx.ext.intersphinx",
     "sphinx.ext.extlinks",
+    'sphinxcontrib.bibtex',
     "mdanalysis_sphinx_theme",
 ]
+
+bibtex_bibfiles = ['references.bib']
 
 autosummary_generate = True
 # This skips generating an autodoc of the test module
