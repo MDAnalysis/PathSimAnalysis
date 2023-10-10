@@ -21,7 +21,7 @@ PathSimAnalysis
 [url_license]: https://www.gnu.org/licenses/gpl-2.0
 [url_mda]: https://www.mdanalysis.org
 
-Calculates the geometric similary of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.
+Calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.
 
 PathSimAnalysis is bound by a [Code of Conduct](https://github.com/MDAnalysis/pathsimanalysis/blob/main/CODE_OF_CONDUCT.md).
 
