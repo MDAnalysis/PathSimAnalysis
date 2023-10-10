@@ -1,6 +1,6 @@
 """
 PathSimAnalysis
-Calculates the geometric similary of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.
+Calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.
 """
 import os
 import sys
@@ -10,7 +10,7 @@ sys.path.append(os.path.dirname(__file__))
 
 import versioneer
 
-short_description = "Calculates the geometric similary of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.".strip().split("\n")[0]
+short_description = "Calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.".strip().split("\n")[0]
 
 # from https://github.com/pytest-dev/pytest-runner#conditional-requirement
 needs_pytest = {'pytest', 'test', 'ptr'}.intersection(sys.argv)

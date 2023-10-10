@@ -183,7 +183,7 @@ man_pages = [
 #  dir menu entry, description, category)
 texinfo_documents = [
     (master_doc, "pathsimanalysis", "PathSimAnalysis Documentation",
-     author, "pathsimanalysis", "Calculates the geometric similary of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.",
+     author, "pathsimanalysis", "Calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.",
      "Miscellaneous"),
 ]
 

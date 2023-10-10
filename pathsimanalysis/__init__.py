@@ -1,6 +1,6 @@
 """
 PathSimAnalysis
-Calculates the geometric similary of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.
+Calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances.
 """
 
 # Add imports here
