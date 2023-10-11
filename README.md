@@ -74,7 +74,7 @@ conda deactivate
 
 ##### Install from PyPI
 
-The latest release of PathSimAnalysis is available on [PyPI]() and can be installed with:
+The latest release of PathSimAnalysis is available on [PyPI](https://pypi.org/project/pathsimanalysis/) and can be installed with:
 
 ```
 pip install pathsimanalysis
