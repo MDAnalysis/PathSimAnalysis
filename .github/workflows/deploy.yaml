@@ -23,7 +23,7 @@ jobs:
   # PyPI
   build:
     name: "Build $PACKAGE_NAME"
-    if: ${{ github.repository == $REPO_OWNER/$REPO_NAME }}
+    if: github.repository == ${{ env.REPO_OWNER}}/${{ env.REPO_NAME }}
     runs-on: ubuntu-latest
 
     steps:
@@ -60,7 +60,7 @@ jobs:
     if: |
       github.event_name == 'release' &&
       github.event.action == 'published' &&
-      ${{ github.repository == $REPO_OWNER/$REPO_NAME }} &&
+      github.repository == ${{ env.REPO_OWNER }}/${{ env.REPO_NAME }} &&
       github.event_name != "pull_request"
     needs:
       - build
@@ -83,7 +83,7 @@ jobs:
   publish-to-testpypi:
     name: "Publish $PACKAGE_NAME to TestPyPI"
     if: |
-      ${{ github.repository == $REPO_OWNER/$REPO_NAME }} &&
+      github.repository == ${{ env.REPO_OWNER }}/${{ env.REPO_NAME }} &&
       github.event_name == 'push' &&
       startsWith(github.ref, 'refs/tags/') &&
       github.event_name != "pull_request"
