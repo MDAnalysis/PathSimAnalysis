@@ -12,18 +12,13 @@ on:
     pull_request:
       branches: [main]
 
-env:
-  REPO_OWNER: MDAnalysis
-  REPO_NAME: PathSimAnalysis
-  PACKAGE_NAME: pathsimanalysis
-
 jobs:
   # Build the packacge and upload the resulting distribution
   # as an artifact to later be used during deployment to
   # PyPI
   build:
     name: "Build $PACKAGE_NAME"
-    if: github.repository == ${{ env.REPO_OWNER}}/${{ env.REPO_NAME }}
+    if: github.repository == ${{ vars.REPO_OWNER}}/${{ vars.REPO_NAME }}
     runs-on: ubuntu-latest
 
     steps:
@@ -60,7 +55,7 @@ jobs:
     if: |
       github.event_name == 'release' &&
       github.event.action == 'published' &&
-      github.repository == ${{ env.REPO_OWNER }}/${{ env.REPO_NAME }} &&
+      github.repository == ${{ vars.REPO_OWNER }}/${{ vars.REPO_NAME }} &&
       github.event_name != "pull_request"
     needs:
       - build
@@ -83,7 +78,7 @@ jobs:
   publish-to-testpypi:
     name: "Publish $PACKAGE_NAME to TestPyPI"
     if: |
-      github.repository == ${{ env.REPO_OWNER }}/${{ env.REPO_NAME }} &&
+      github.repository == ${{ vars.REPO_OWNER }}/${{ vars.REPO_NAME }} &&
       github.event_name == 'push' &&
       startsWith(github.ref, 'refs/tags/') &&
       github.event_name != "pull_request"
