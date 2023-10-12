@@ -9,9 +9,6 @@ on:
       types:
         - published
 
-    pull_request:
-      branches: [main]
-
 jobs:
   # Build the packacge and upload the resulting distribution
   # as an artifact to later be used during deployment to
@@ -40,9 +37,8 @@ jobs:
 
     - name: Upload distribution artifact
       if: |
-        ((github.event_name == 'push' && startsWith(github.ref, 'refs/tags/' )) ||
-        (github.event_name == 'release' && github.event.action == 'published')) &&
-        github.event_name != 'pull_request'
+        (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/' )) ||
+        (github.event_name == 'release' && github.event.action == 'published')
       uses: actions/upload-artifact@v3
       with:
         name: python-package-distributions
@@ -55,8 +51,7 @@ jobs:
     if: |
       github.event_name == 'release' &&
       github.event.action == 'published' &&
-      github.repository == ${{ vars.REPO_OWNER }}/${{ vars.REPO_NAME }} &&
-      github.event_name != 'pull_request'
+      github.repository == ${{ vars.REPO_OWNER }}/${{ vars.REPO_NAME }}
     needs:
       - build
     runs-on: ubuntu-latest
@@ -67,7 +62,7 @@ jobs:
       id-token: write
 
     steps:
-    - name: Downlaod build artifacts
+    - name: Download build artifacts
       uses: actions/download-artifact@v3
       with:
         name: python-package-distributions
@@ -80,8 +75,7 @@ jobs:
     if: |
       github.repository == ${{ vars.REPO_OWNER }}/${{ vars.REPO_NAME }} &&
       github.event_name == 'push' &&
-      startsWith(github.ref, 'refs/tags/') &&
-      github.event_name != 'pull_request'
+      startsWith(github.ref, 'refs/tags/')
     needs:
       - build
     runs-on: ubuntu-latest
