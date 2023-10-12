@@ -17,7 +17,7 @@ jobs:
   # as an artifact to later be used during deployment to
   # PyPI
   build:
-    name: "Build $PACKAGE_NAME"
+    name: Build ${{ vars.PACKAGE_NAME }}
     if: github.repository == ${{ vars.REPO_OWNER}}/${{ vars.REPO_NAME }}
     runs-on: ubuntu-latest
 
@@ -51,7 +51,7 @@ jobs:
   # Publish the resulting artifact from the above job to
   # the main PyPI repository.
   publish-to-pypi:
-    name: "Publish $PACKAGE_NAME to PyPI"
+    name: Publish ${{ vars.PACKAGE_NAME }} to PyPI
     if: |
       github.event_name == 'release' &&
       github.event.action == 'published' &&
@@ -68,15 +68,15 @@ jobs:
 
     steps:
     - name: Downlaod build artifacts
-      uses: actions/download-artifacts@v3
+      uses: actions/download-artifact@v3
       with:
         name: python-package-distributions
         path: dist/
-    - name: "Publish $PACKAGE_NAME to PyPI"
+    - name: Publish ${{ vars.PACKAGE_NAME }} to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
 
   publish-to-testpypi:
-    name: "Publish $PACKAGE_NAME to TestPyPI"
+    name: Publish ${{ vars.PACKAGE_NAME }} to TestPyPI
     if: |
       github.repository == ${{ vars.REPO_OWNER }}/${{ vars.REPO_NAME }} &&
       github.event_name == 'push' &&
@@ -95,12 +95,12 @@ jobs:
 
     steps:
     - name: Downlaod build artifacts
-      uses: actions/download-artifacts@v3
+      uses: actions/download-artifact@v3
       with:
         name: python-package-distributions
         path: dist/
 
-    - name: "Publish $PACKAGE_NAME to TestPyPI"
+    - name: Publish ${{ vars.PACKAGE_NAME }} to TestPyPI
       uses: pypa/gh-action-pypi-publish@release/v1
       with:
         repository-url: https://test.pypi.org/legacy/
