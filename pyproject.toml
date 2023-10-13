@@ -19,6 +19,9 @@ readme = "README.md"
 requires-python = ">=3.9"
 dependencies = [
     "MDAnalysis>=2.0.0",
+    "scipy>=1.5.0",
+    "matplotlib>=1.5.1",
+    "numpy>=1.22.3",
 ]
 keywords = [
     "molecular simulations",
@@ -39,9 +42,9 @@ doc = [
     "sphinx_rtd_theme",
 ]
 
-# [project.urls]
-# source = "https://github.com/MDAnalysis/pathsimanalysis"
-# documentation = "https://pathsimanalysis.readthedocs.io"
+[project.urls]
+source = "https://github.com/MDAnalysis/pathsimanalysis"
+documentation = "https://mdanalysis.org/PathSimAnalysis"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
