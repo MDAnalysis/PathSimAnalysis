@@ -1,7 +1,7 @@
 # Authors
 
-waterdynamics was created by MDAnalysis in 2023.
-
+PathSimAnalysis was originally written by Sean Seyler in 2015 and was 
+part of the MDAnalysis core library from 2015 to 2024.
 
 All contributing authors are listed in this file below.
 The repository history at https://github.com/MDAnalysis/waterdynamics
