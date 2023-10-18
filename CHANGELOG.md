@@ -40,10 +40,12 @@ The rules for this file:
 
 ## [1.0.0] -- 2023-10-10
 
-pathsimanalysis was created by Ian Kenney in 2023 and is based upon the 
-source code in the MDAnalysis.analysis.psa analysis submodule originally
-authored by Sean Seyler in 2015. Additional contributors to the original
-source are reflected in the AUTHORS.md file contained in this repository.
+The original `MDAnalysis.analysis.psa` was written by Sean Seyler in 2015
+and had been part of MDAnalysis since release 0.10.0,
+https://docs.mdanalysis.org/2.6.1/documentation_pages/analysis/psa.html.
+Ian Kenney created the `pathsimanalysis` MDAKit in 2023, based on the original
+code in MDAnalysis. Additional contributors to the original source code are
+listed in the AUTHORS.md file.
 
 ### Added
 
