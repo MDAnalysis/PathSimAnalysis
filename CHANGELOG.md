@@ -20,9 +20,11 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+- ianmkenney
 
 ### Added
 <!-- New added features -->
+- GitHub action workflow for automatic PyPI package deployment (PR #3)
 
 ### Fixed
 <!-- Bug fixes -->
@@ -35,3 +37,23 @@ The rules for this file:
 
 ### Removed
 <!-- Removed features -->
+
+## [1.0.0] -- 2023-10-10
+
+The original `MDAnalysis.analysis.psa` was written by Sean Seyler in 2015
+and had been part of MDAnalysis since release 0.10.0,
+https://docs.mdanalysis.org/2.6.1/documentation_pages/analysis/psa.html.
+Ian Kenney created the `pathsimanalysis` MDAKit in 2023, based on the original
+code in MDAnalysis. Additional contributors to the original source code are
+listed in the AUTHORS.md file.
+
+### Added
+
+- the core functionality of PathSimAnalysis (and its tests) was implemented
+  using the source code from MDAnalysis.analysis.psa
+- PRs trigger Read the Docs for debugging documentation (PR #1)
+- GitHub actions workflow for building and deploying docs to GitHub pages 
+  (PR #2)
+
+[Unreleased]: https://github.com/MDAnalysis/PathSimAnalysis/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/MDAnalysis/PathSimAnalysis/releases/tag/1.0.0
