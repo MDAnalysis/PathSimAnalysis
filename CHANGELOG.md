@@ -20,11 +20,9 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
-- ianmkenney
 
 ### Added
 <!-- New added features -->
-- GitHub action workflow for automatic PyPI package deployment (PR #3)
 
 ### Fixed
 <!-- Bug fixes -->
@@ -37,6 +35,18 @@ The rules for this file:
 
 ### Removed
 <!-- Removed features -->
+
+## [1.0.1] -- 2023-10-26
+
+### Authors
+- ianmkenney
+
+### Added
+- GitHub action workflow for automatic PyPI package deployment (PR #3)
+
+### Fixed
+- pyproject.toml explicitly includes all dependencies and no longer relies
+  on the MDAnalysis dependency stack (PR #3)
 
 ## [1.0.0] -- 2023-10-10
 
@@ -55,5 +65,6 @@ listed in the AUTHORS.md file.
 - GitHub actions workflow for building and deploying docs to GitHub pages 
   (PR #2)
 
-[Unreleased]: https://github.com/MDAnalysis/PathSimAnalysis/compare/1.0.0...HEAD
+[Unreleased]: https://github.com/MDAnalysis/PathSimAnalysis/compare/1.0.1...HEAD
+[1.0.1]: https://github.com/MDAnalysis/PathSimAnalysis/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/MDAnalysis/PathSimAnalysis/releases/tag/1.0.0
