@@ -36,7 +36,7 @@ The rules for this file:
 ### Removed
 <!-- Removed features -->
 
-## [1.0.1] -- 2023-10-25
+## [1.0.1] -- 2023-10-26
 
 ### Authors
 - ianmkenney
