@@ -19,16 +19,16 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-<!-- GitHub usernames of contributors to this release -->
+- IAlibay
 
 ### Added
-<!-- New added features -->
+- Support for Python 3.12
 
 ### Fixed
-<!-- Bug fixes -->
+- Changed logger to no longer point to MDAnalysis.analysis
 
 ### Changed
-<!-- Changes in existing functionality -->
+- Switch from versioneer to versioningit
 
 ### Deprecated
 <!-- Soon-to-be removed features -->

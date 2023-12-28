@@ -10,13 +10,10 @@ from MDAnalysis.due import due, Doi
 
 due.cite(Doi("10.1371/journal.pcbi.1004568"),
          description="Path Similarity Analysis algorithm and implementation",
-         path="MDAnalysis.analysis.psa",
+         path="pathsimanalysis.psa",
          cite_module=True)
 del Doi
 
-# Handle versioneer
-from ._version import get_versions
-versions = get_versions()
-__version__ = versions['version']
-__git_revision__ = versions['full-revisionid']
-del get_versions, versions
+# Handle version
+from importlib.metadata import version
+__version__ = version("pathsimanalysis")
