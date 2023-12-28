@@ -195,6 +195,7 @@ Classes, methods, and functions
 
 .. footbibliography::
 """
+import logging
 import pickle
 import os
 import warnings
@@ -208,10 +209,10 @@ import matplotlib
 import MDAnalysis
 import MDAnalysis.analysis.align
 from MDAnalysis import NoDataError
-from MDAnalysis.lib.util import deprecate
 
-import logging
-logger = logging.getLogger('MDAnalysis.analysis.psa')
+
+logger = logging.getLogger(__name__)
+
 
 def get_path_metric_func(name):
     """Selects a path metric function by name.
