@@ -6,6 +6,23 @@ This page details how to get started with PathSimAnalysis.
 Installation
 ------------
 
+Conda / Mamba
+-------------
+
+You can install `pathsimanalysis from the conda-forge channel <https://anaconda.org/conda-forge/pathsimanalysis>`_ with:
+
+.. code-block:: sh
+
+	conda install -c conda-forge pathsimanalysis
+
+
+or alternatively with :program:`mamba` if you have it installed:
+
+.. code-block:: sh
+
+        mamba install -c conda-forge pathsimanalysis
+
+
 PyPi
 ~~~~
 
