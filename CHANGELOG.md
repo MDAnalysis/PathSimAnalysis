@@ -19,10 +19,10 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-<!-- GitHub usernames of contributors to this release -->
+- IAlibay
 
 ### Added
-<!-- New added features -->
+- Added conda-forge install instruction to docs (PR #14)
 
 ### Fixed
 <!-- Bug fixes -->
