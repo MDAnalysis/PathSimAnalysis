@@ -25,20 +25,11 @@ Calculates the geometric similarity of molecular dynamics trajectories using pat
 
 PathSimAnalysis is bound by a [Code of Conduct](https://github.com/MDAnalysis/pathsimanalysis/blob/main/CODE_OF_CONDUCT.md).
 
-### Installation
-
-To build PathSimAnalysis from source,
-we highly recommend using virtual environments.
-If possible, we strongly recommend that you use
-[Anaconda](https://docs.conda.io/en/latest/) as your package manager.
-Below we provide instructions both for `conda` and
-for `pip`.
-
-#### With conda
+### Installation from packages
+#### With conda from conda-forge
 
 Ensure that you have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed.
 
-##### From conda-forge
 
 You can install [pathsimanalysis from the conda-forge channel](https://anaconda.org/conda-forge/pathsimanalysis) with
 ```
@@ -50,7 +41,26 @@ or alternatively with `mamba` if you have it installed:
 mamba install -c conda-forge pathsimanalysis
 ```
 
-##### From source inside a conda ennvironment
+#### Install from PyPI
+
+The latest release of PathSimAnalysis is available on [PyPI](https://pypi.org/project/pathsimanalysis/) and can be installed with:
+
+```
+pip install pathsimanalysis
+```
+
+### Installation from source
+
+To build PathSimAnalysis from source,
+we highly recommend using virtual environments.
+If possible, we strongly recommend that you use
+[Anaconda](https://docs.conda.io/en/latest/) as your package manager.
+Below we provide instructions both for `conda` and
+for `pip`.
+
+#### With conda
+Ensure that you have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed.
+
 Create a virtual environment and activate it:
 
 ```
@@ -84,16 +94,6 @@ conda deactivate
 ```
 
 #### With pip
-
-##### Install from PyPI
-
-The latest release of PathSimAnalysis is available on [PyPI](https://pypi.org/project/pathsimanalysis/) and can be installed with:
-
-```
-pip install pathsimanalysis
-```
-
-##### Install from source
 
 To build the package from source, run:
 
