@@ -22,7 +22,8 @@ The rules for this file:
 - IAlibay
 
 ### Added
-- Support for Python 3.12
+- Added conda-forge install instruction to docs (Issue #13, PR #14)
+- Support for Python 3.12 (Issue #11, PR #12)
 
 ### Fixed
 - Changed logger to no longer point to MDAnalysis.analysis
