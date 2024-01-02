@@ -38,6 +38,19 @@ for `pip`.
 
 Ensure that you have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed.
 
+##### From conda-forge
+
+You can install [pathsimanalysis from the conda-forge channel](https://anaconda.org/conda-forge/pathsimanalysis) with
+```
+conda install -c conda-forge pathsimanalysis
+``` 
+or alternatively with `mamba` if you have it installed:
+
+```
+mamba install -c conda-forge pathsimanalysis
+```
+
+##### From source inside a conda ennvironment
 Create a virtual environment and activate it:
 
 ```
