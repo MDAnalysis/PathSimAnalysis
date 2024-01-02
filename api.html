@@ -15,14 +15,16 @@
 </head>
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API Documentation &mdash; PathSimAnalysis  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/site.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/site.css" />
+
+  
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -201,7 +203,7 @@ calculated, each pair having a point from <cite>P</cite> and a point from
 <cite>Q</cite>.</p>
 <p><cite>P</cite> (<cite>Q</cite>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.6.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). The pairwise MSD
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). The pairwise MSD
 matrix has dimensions <span class="math notranslate nohighlight">\(N_p\)</span> by <span class="math notranslate nohighlight">\(N_q\)</span>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -282,7 +284,7 @@ each atom.</p></li>
 protein configurations.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.6.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form.</p>
 <p>Note that reversing the path does not change the Hausdorff distance.</p>
 <dl class="field-list simple">
@@ -333,7 +335,7 @@ distance with an RMSD metric</p>
 <dd><p>Calculate the weighted average Hausdorff distance between two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.6.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form. The nearest
 neighbor distances for <em>P</em> (to <em>Q</em>) and those of <em>Q</em> (to <em>P</em>) are averaged
 individually to get the average nearest neighbor distance for <em>P</em> and
@@ -385,7 +387,7 @@ details.</p>
 <dd><p>Calculate the average Hausdorff distance between two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.6.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form. The nearest
 neighbor distances for <em>P</em> (to <em>Q</em>) and those of <em>Q</em> (to <em>P</em>) are all
 averaged together to get a mean nearest neighbor distance. This measure
@@ -435,7 +437,7 @@ triangle inequality); see <a class="footnote-reference brackets" href="#footcite
 <dd><p>Find the Hausdorff neighbors of two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.6.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -472,7 +474,7 @@ hausdorff neighbors.</p></li>
 <dd><p>Calculate the discrete Fréchet distance between two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.6.1)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or :<span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -548,7 +550,7 @@ distance matrix.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pathsimanalysis.psa.Path">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pathsimanalysis.psa.</span></span><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">universe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'name</span> <span class="pre">CA'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pathsimanalysis/psa.html#Path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pathsimanalysis.psa.Path" title="Link to this definition"></a></dt>
-<dd><p>Represent a path based on a <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.6.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a>.</p>
+<dd><p>Represent a path based on a <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a>.</p>
 <p>Pre-process a <code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code> object: (1) fit the trajectory to a
 reference structure, (2) convert fitted time series to a
 <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> representation of <a class="reference internal" href="#pathsimanalysis.psa.Path.path" title="pathsimanalysis.psa.Path.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.path</span></code></a>.</p>
@@ -575,7 +577,7 @@ alignment of the original trajectories to a reference structure.</p>
 <dt class="sig sig-object py" id="pathsimanalysis.psa.Path.select">
 <span class="sig-name descname"><span class="pre">select</span></span><a class="headerlink" href="#pathsimanalysis.psa.Path.select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.6.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
 from <a class="reference internal" href="#pathsimanalysis.psa.Path.u_reference" title="pathsimanalysis.psa.Path.u_reference"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.u_reference</span></code></a></p>
 </dd></dl>
 
@@ -583,7 +585,7 @@ from <a class="reference internal" href="#pathsimanalysis.psa.Path.u_reference" 
 <dt class="sig sig-object py" id="pathsimanalysis.psa.Path.path_select">
 <span class="sig-name descname"><span class="pre">path_select</span></span><a class="headerlink" href="#pathsimanalysis.psa.Path.path_select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.6.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
 to compose <a class="reference internal" href="#pathsimanalysis.psa.Path.path" title="pathsimanalysis.psa.Path.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.path</span></code></a></p>
 </dd></dl>
 
@@ -634,7 +636,7 @@ than <cite>tol_mass</cite> [0.1]</p></li>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
-<p>Uses <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/align.html#MDAnalysis.analysis.align.AlignTraj" title="(in MDAnalysis v2.6.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.analysis.align.AlignTraj</span></code></a> for the fitting.</p>
+<p>Uses <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/align.html#MDAnalysis.analysis.align.AlignTraj" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.analysis.align.AlignTraj</span></code></a> for the fitting.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.16.1: </span>Instead of <code class="docutils literal notranslate"><span class="pre">mass_weighted=True</span></code> use new <code class="docutils literal notranslate"><span class="pre">weights='mass'</span></code>;
 refactored to fit with AnalysisBase API</p>
@@ -742,7 +744,7 @@ if <code class="docutils literal notranslate"><span class="pre">False</span></co
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>representing a time series of atomic positions of an
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup" title="(in MDAnalysis v2.6.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup</span></code></a> selection from
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup</span></code></a> selection from
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.u_fitted.trajectory</span></code></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -847,7 +849,7 @@ alignment of the original trajectories to a reference structure.</p>
 <dt class="sig sig-object py" id="pathsimanalysis.psa.PSAnalysis.select">
 <span class="sig-name descname"><span class="pre">select</span></span><a class="headerlink" href="#pathsimanalysis.psa.PSAnalysis.select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.6.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
 from <a class="reference internal" href="#pathsimanalysis.psa.PSAnalysis.u_reference" title="pathsimanalysis.psa.PSAnalysis.u_reference"><code class="xref py py-attr docutils literal notranslate"><span class="pre">PSAnalysis.u_reference</span></code></a></p>
 </dd></dl>
 
@@ -855,7 +857,7 @@ from <a class="reference internal" href="#pathsimanalysis.psa.PSAnalysis.u_refer
 <dt class="sig sig-object py" id="pathsimanalysis.psa.PSAnalysis.path_select">
 <span class="sig-name descname"><span class="pre">path_select</span></span><a class="headerlink" href="#pathsimanalysis.psa.PSAnalysis.path_select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.6.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
 to compose <a class="reference internal" href="#pathsimanalysis.psa.Path.path" title="pathsimanalysis.psa.Path.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.path</span></code></a></p>
 </dd></dl>
 
@@ -1323,28 +1325,29 @@ specified by <code class="xref py py-attr docutils literal notranslate"><span cl
 
 <p class="rubric">References</p>
 <div class="docutils container" id="id11">
-<aside class="footnote brackets" id="footcite-seyler2015" role="note">
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="footcite-seyler2015" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></span>
 <span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id3">2</a>,<a role="doc-backlink" href="#id4">3</a>,<a role="doc-backlink" href="#id5">4</a>)</span>
 <p>Sean L. Seyler, Avishek Kumar, M. F. Thorpe, and Oliver Beckstein. Path similarity analysis: a method for quantifying macromolecular pathways. <em>PLOS Computational Biology</em>, 11(10):1–37, 10 2015. <a class="reference external" href="https://doi.org/10.1371/journal.pcbi.1004568">doi:10.1371/journal.pcbi.1004568</a>.</p>
 </aside>
-<aside class="footnote brackets" id="footcite-taha2015" role="note">
+<aside class="footnote brackets" id="footcite-taha2015" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
 <p>Abdel Aziz Taha and Allan Hanbury. An efficient algorithm for calculating the exact hausdorff distance. <em>IEEE Transactions on Pattern Analysis and Machine Intelligence</em>, 37(11):2153–2163, 2015. <a class="reference external" href="https://doi.org/10.1109/TPAMI.2015.2408351">doi:10.1109/TPAMI.2015.2408351</a>.</p>
 </aside>
-<aside class="footnote brackets" id="footcite-frechet1906" role="note">
+<aside class="footnote brackets" id="footcite-frechet1906" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id6">3</a><span class="fn-bracket">]</span></span>
 <p>M. Maurice Frèchet. Sur quelques points du calcul fonctionnel. <em>Rendiconti del Circolo Matematico di Palermo (1884-1940)</em>, 22(1):1–72, 1906. <a class="reference external" href="https://doi.org/10.1007/BF03018603">doi:10.1007/BF03018603</a>.</p>
 </aside>
-<aside class="footnote brackets" id="footcite-alt1995" role="note">
+<aside class="footnote brackets" id="footcite-alt1995" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id7">4</a><span class="fn-bracket">]</span></span>
 <p>Helmut Alt and Michael Godau. Computing the frechet distance between two polygonal curves. <em>International Journal of Computational Geometry &amp; Applications</em>, 05(01n02):75–91, 1995. <a class="reference external" href="https://doi.org/10.1142/S0218195995000064">doi:10.1142/S0218195995000064</a>.</p>
 </aside>
-<aside class="footnote brackets" id="footcite-eitermannila1994" role="note">
+<aside class="footnote brackets" id="footcite-eitermannila1994" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id8">5</a><span class="fn-bracket">]</span></span>
 <p>Thomas Eiter and Heikki Mannila. Computing discrete frechet distance. 05 1994.</p>
 </aside>
-<aside class="footnote brackets" id="footcite-eitermannila1997" role="note">
+<aside class="footnote brackets" id="footcite-eitermannila1997" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">6</a><span class="fn-bracket">]</span></span>
 <p>Thomas Eiter and Heikki Mannila. Distance measures for point sets and their computation. <em>Acta Informatica</em>, 34(2):109–133, 1997. <a class="reference external" href="https://doi.org/10.1007/s002360050075">doi:10.1007/s002360050075</a>.</p>
 </aside>
