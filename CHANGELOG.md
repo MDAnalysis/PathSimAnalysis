@@ -22,13 +22,14 @@ The rules for this file:
 - IAlibay
 
 ### Added
-- Added conda-forge install instruction to docs (PR #14)
+- Added conda-forge install instruction to docs (Issue #13, PR #14)
+- Support for Python 3.12 (Issue #11, PR #12)
 
 ### Fixed
-<!-- Bug fixes -->
+- Changed logger to no longer point to MDAnalysis.analysis
 
 ### Changed
-<!-- Changes in existing functionality -->
+- Switch from versioneer to versioningit
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
