@@ -16,7 +16,7 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## [Unreleased]
+## [1.1.0] -- 2024-01-06
 
 ### Authors
 - IAlibay
@@ -30,12 +30,6 @@ The rules for this file:
 
 ### Changed
 - Switch from versioneer to versioningit
-
-### Deprecated
-<!-- Soon-to-be removed features -->
-
-### Removed
-<!-- Removed features -->
 
 ## [1.0.1] -- 2023-10-26
 
