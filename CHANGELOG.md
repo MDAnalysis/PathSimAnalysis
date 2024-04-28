@@ -16,6 +16,17 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
+## Unreleased
+
+### Authors
+- IAlibay
+
+### Changed
+- In accordance with SPEC0 the minimum Python version has been
+  raised to v3.10 (PR #36)
+- Minimum supported MDAnalysis version has been raised to
+  v2.1.0 (PR #36)
+
 ## [1.1.0] -- 2024-01-06
 
 ### Authors
