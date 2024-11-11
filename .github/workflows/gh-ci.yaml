@@ -65,7 +65,7 @@ jobs:
       with:
         version: ${{ matrix.mdanalysis-version }}
         install-tests: true
-        installer:  mamba 
+        installer:  micromamba 
         shell: bash  -l {0} 
       
     - name: Install package
