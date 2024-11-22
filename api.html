@@ -14,6 +14,8 @@
   <link rel="shortcut icon" href="_static/logo/mda_favicon.ico">
 </head>
 
+
+
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" data-content_root="./">
 <head>
@@ -25,17 +27,13 @@
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
 
   
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
-  
-        <script src="_static/jquery.js?v=5d32c60e"></script>
-        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=5929fcd5"></script>
-        <script src="_static/doctools.js?v=9a2dae69"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
-        <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-        <script src="_static/js/versions.js"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      <script src="_static/js/versions.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -189,7 +187,7 @@ which case it counts from the last axis to the zeroth axis.</p></li>
 <dd class="field-even"><p>the sum of the squares of the elements of <cite>v</cite> along <cite>axes</cite></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)">float</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -203,7 +201,7 @@ calculated, each pair having a point from <cite>P</cite> and a point from
 <cite>Q</cite>.</p>
 <p><cite>P</cite> (<cite>Q</cite>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). The pairwise MSD
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.8.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). The pairwise MSD
 matrix has dimensions <span class="math notranslate nohighlight">\(N_p\)</span> by <span class="math notranslate nohighlight">\(N_q\)</span>.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -250,7 +248,7 @@ each atom.</p></li>
 <dd class="field-even"><p>the number of atoms and the axes containing coordinates</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>, (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a>, …))</p>
+<dd class="field-odd"><p>(<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a>, (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a>, …))</p>
 </dd>
 </dl>
 </dd></dl>
@@ -284,7 +282,7 @@ each atom.</p></li>
 protein configurations.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.8.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form.</p>
 <p>Note that reversing the path does not change the Hausdorff distance.</p>
 <dl class="field-list simple">
@@ -298,7 +296,7 @@ either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\
 <dd class="field-even"><p>the Hausdorff distance between paths <cite>P</cite> and <cite>Q</cite></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)">float</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
 </dd>
 </dl>
 <p class="rubric">Example</p>
@@ -335,7 +333,7 @@ distance with an RMSD metric</p>
 <dd><p>Calculate the weighted average Hausdorff distance between two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.8.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form. The nearest
 neighbor distances for <em>P</em> (to <em>Q</em>) and those of <em>Q</em> (to <em>P</em>) are averaged
 individually to get the average nearest neighbor distance for <em>P</em> and
@@ -352,7 +350,7 @@ measure that gives equal weight to <em>P</em> and <em>Q</em>.</p>
 <dd class="field-even"><p>the weighted average Hausdorff distance between paths <cite>P</cite> and <cite>Q</cite></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)">float</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
 </dd>
 </dl>
 <p class="rubric">Example</p>
@@ -387,7 +385,7 @@ details.</p>
 <dd><p>Calculate the average Hausdorff distance between two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.8.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form. The nearest
 neighbor distances for <em>P</em> (to <em>Q</em>) and those of <em>Q</em> (to <em>P</em>) are all
 averaged together to get a mean nearest neighbor distance. This measure
@@ -404,7 +402,7 @@ average Hausdorff gives equal weight to both paths.</p>
 <dd class="field-even"><p>the average Hausdorff distance between paths <cite>P</cite> and <cite>Q</cite></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)">float</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
 </dd>
 </dl>
 <p class="rubric">Example</p>
@@ -437,7 +435,7 @@ triangle inequality); see <a class="footnote-reference brackets" href="#footcite
 <dd><p>Find the Hausdorff neighbors of two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.8.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or <span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -454,7 +452,7 @@ neighbors for <cite>P</cite> and <cite>Q</cite>, respectively, the second (key
 distances for <cite>P</cite> and <cite>Q</cite>, respectively</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.12)">dict</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.13)">dict</a></p>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
@@ -474,7 +472,7 @@ hausdorff neighbors.</p></li>
 <dd><p>Calculate the discrete Fréchet distance between two paths.</p>
 <p><em>P</em> (<em>Q</em>) is a <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> of <span class="math notranslate nohighlight">\(N_p\)</span> (<span class="math notranslate nohighlight">\(N_q\)</span>) time
 steps, <span class="math notranslate nohighlight">\(N\)</span> atoms, and <span class="math notranslate nohighlight">\(3N\)</span> coordinates (e.g.,
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.7.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.positions" title="(in MDAnalysis v2.8.0)"><code class="xref py py-attr docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup.positions</span></code></a>). <em>P</em> (<em>Q</em>) has
 either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\)</span> (<span class="math notranslate nohighlight">\(N_q \times N \times 3\)</span>), or :<span class="math notranslate nohighlight">\(N_p \times (3N)\)</span> (<span class="math notranslate nohighlight">\(N_q \times (3N)\)</span>) in flattened form.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -487,7 +485,7 @@ either shape <span class="math notranslate nohighlight">\(N_p \times N \times 3\
 <dd class="field-even"><p>the discrete Fréchet distance between paths <em>P</em> and <em>Q</em></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.12)">float</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.13)">float</a></p>
 </dd>
 </dl>
 <p class="rubric">Example</p>
@@ -542,7 +540,7 @@ distance matrix.</p>
 <dd class="field-even"><p>index (of the matrix element) in the corresponding distance vector</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -550,7 +548,7 @@ distance matrix.</p>
 <dl class="py class">
 <dt class="sig sig-object py" id="pathsimanalysis.psa.Path">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pathsimanalysis.psa.</span></span><span class="sig-name descname"><span class="pre">Path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">universe</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'name</span> <span class="pre">CA'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path_select</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_frame</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pathsimanalysis/psa.html#Path"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pathsimanalysis.psa.Path" title="Link to this definition"></a></dt>
-<dd><p>Represent a path based on a <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a>.</p>
+<dd><p>Represent a path based on a <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.8.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a>.</p>
 <p>Pre-process a <code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code> object: (1) fit the trajectory to a
 reference structure, (2) convert fitted time series to a
 <code class="xref py py-class docutils literal notranslate"><span class="pre">numpy.ndarray</span></code> representation of <a class="reference internal" href="#pathsimanalysis.psa.Path.path" title="pathsimanalysis.psa.Path.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.path</span></code></a>.</p>
@@ -577,7 +575,7 @@ alignment of the original trajectories to a reference structure.</p>
 <dt class="sig sig-object py" id="pathsimanalysis.psa.Path.select">
 <span class="sig-name descname"><span class="pre">select</span></span><a class="headerlink" href="#pathsimanalysis.psa.Path.select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.8.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
 from <a class="reference internal" href="#pathsimanalysis.psa.Path.u_reference" title="pathsimanalysis.psa.Path.u_reference"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.u_reference</span></code></a></p>
 </dd></dl>
 
@@ -585,7 +583,7 @@ from <a class="reference internal" href="#pathsimanalysis.psa.Path.u_reference" 
 <dt class="sig sig-object py" id="pathsimanalysis.psa.Path.path_select">
 <span class="sig-name descname"><span class="pre">path_select</span></span><a class="headerlink" href="#pathsimanalysis.psa.Path.path_select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.8.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
 to compose <a class="reference internal" href="#pathsimanalysis.psa.Path.path" title="pathsimanalysis.psa.Path.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.path</span></code></a></p>
 </dd></dl>
 
@@ -636,7 +634,7 @@ than <cite>tol_mass</cite> [0.1]</p></li>
 </dd>
 </dl>
 <p class="rubric">Notes</p>
-<p>Uses <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/align.html#MDAnalysis.analysis.align.AlignTraj" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.analysis.align.AlignTraj</span></code></a> for the fitting.</p>
+<p>Uses <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/align.html#MDAnalysis.analysis.align.AlignTraj" title="(in MDAnalysis v2.8.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.analysis.align.AlignTraj</span></code></a> for the fitting.</p>
 <div class="deprecated">
 <p><span class="versionmodified deprecated">Deprecated since version 0.16.1: </span>Instead of <code class="docutils literal notranslate"><span class="pre">mass_weighted=True</span></code> use new <code class="docutils literal notranslate"><span class="pre">weights='mass'</span></code>;
 refactored to fit with AnalysisBase API</p>
@@ -656,7 +654,7 @@ refactored to fit with AnalysisBase API</p>
 <dd class="field-odd"><p>the number of atoms in the <a class="reference internal" href="#pathsimanalysis.psa.Path" title="pathsimanalysis.psa.Path"><code class="xref py py-class docutils literal notranslate"><span class="pre">Path</span></code></a></p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -706,7 +704,7 @@ if <code class="docutils literal notranslate"><span class="pre">False</span></co
 <dd class="field-even"><p><strong>topology_trajectory</strong> – A tuple of the topology name and new trajectory name.</p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.12)">tuple</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.13)">tuple</a></p>
 </dd>
 </dl>
 <div class="deprecated">
@@ -744,7 +742,7 @@ if <code class="docutils literal notranslate"><span class="pre">False</span></co
 </dd>
 <dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><p>representing a time series of atomic positions of an
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup</span></code></a> selection from
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup" title="(in MDAnalysis v2.8.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">MDAnalysis.core.groups.AtomGroup</span></code></a> selection from
 <code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.u_fitted.trajectory</span></code></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
@@ -849,7 +847,7 @@ alignment of the original trajectories to a reference structure.</p>
 <dt class="sig sig-object py" id="pathsimanalysis.psa.PSAnalysis.select">
 <span class="sig-name descname"><span class="pre">select</span></span><a class="headerlink" href="#pathsimanalysis.psa.PSAnalysis.select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.8.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select frame
 from <a class="reference internal" href="#pathsimanalysis.psa.PSAnalysis.u_reference" title="pathsimanalysis.psa.PSAnalysis.u_reference"><code class="xref py py-attr docutils literal notranslate"><span class="pre">PSAnalysis.u_reference</span></code></a></p>
 </dd></dl>
 
@@ -857,7 +855,7 @@ from <a class="reference internal" href="#pathsimanalysis.psa.PSAnalysis.u_refer
 <dt class="sig sig-object py" id="pathsimanalysis.psa.PSAnalysis.path_select">
 <span class="sig-name descname"><span class="pre">path_select</span></span><a class="headerlink" href="#pathsimanalysis.psa.PSAnalysis.path_select" title="Link to this definition"></a></dt>
 <dd><p>string, selection for
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.select_atoms" title="(in MDAnalysis v2.8.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">select_atoms()</span></code></a> to select atoms
 to compose <a class="reference internal" href="#pathsimanalysis.psa.Path.path" title="pathsimanalysis.psa.Path.path"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Path.path</span></code></a></p>
 </dd></dl>
 
@@ -985,7 +983,7 @@ now match the docstring documented defaults.</p>
 <dd class="field-odd"><p>the number of atoms in any path</p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
 </dd>
 </dl>
 <div class="admonition note">
@@ -1008,7 +1006,7 @@ method.</p>
 <dd class="field-odd"><p>the number of paths in <code class="xref py py-class docutils literal notranslate"><span class="pre">PSA</span></code></p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.12)">int</a></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.13)">int</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1053,7 +1051,7 @@ method.</p>
 <code class="xref py py-class docutils literal notranslate"><span class="pre">PSA</span></code></p>
 </dd>
 <dt class="field-even">Return type<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.12)">list</a></p>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.13)">list</a></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1312,7 +1310,7 @@ specified by <code class="xref py py-attr docutils literal notranslate"><span cl
 <dd class="field-even"><p><strong>filename</strong></p>
 </dd>
 <dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.12)">str</a></p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.13)">str</a></p>
 </dd>
 </dl>
 <div class="admonition seealso">
