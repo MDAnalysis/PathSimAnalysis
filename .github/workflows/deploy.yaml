@@ -25,7 +25,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: testpypi_deploy
-        uses: MDAnalysis/pypi-deployment@main
+        uses: mdanalysis/pypi-deployment@main
         with:
           test_submission: true
           tests: true
@@ -48,7 +48,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: pypi_deploy
-        uses: MDAnalysis/pypi-deployment@main
+        uses: mdanalysis/pypi-deployment@main
         with:
           package_name: 'pathsimanalysis'
           tests: false
