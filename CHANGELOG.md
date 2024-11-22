@@ -16,7 +16,7 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## Unreleased
+## [1.2.0] -- 2024-11-22
 
 ### Authors
 - IAlibay
@@ -26,6 +26,7 @@ The rules for this file:
   raised to v3.10 (PR #36)
 - Minimum supported MDAnalysis version has been raised to
   v2.1.0 (PR #36)
+- License has been changed from GPLv2+ to LGPLv2.1+
 
 ## [1.1.0] -- 2024-01-06
 
