@@ -21,12 +21,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v7
       with:
         fetch-depth: 0         
 
     - name: setup_miniconda
-      uses: conda-incubator/setup-miniconda@v2
+      uses: conda-incubator/setup-miniconda@v4
       with:
         python-version: 3.11
         environment-file: docs/requirements.yaml
@@ -46,7 +46,7 @@ jobs:
         cd docs && sphinx-build -b html source build
 
     - name: deploy docs
-      uses: peaceiris/actions-gh-pages@v3
+      uses: peaceiris/actions-gh-pages@v4
       if: github.event_name != 'pull_request'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -54,7 +54,7 @@ jobs:
         user_name: 'github-actions'
         user_email: 'github-action@users.noreply.github.com'
 
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v7
       if: github.event_name == 'pull_request'
       with:
         name: pr_docs
