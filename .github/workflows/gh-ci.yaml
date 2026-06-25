@@ -30,14 +30,14 @@ jobs:
         fail-fast: false
         matrix:
           os: [macOS-latest, ubuntu-latest, windows-latest]
-          python-version: ["3.10", "3.11", "3.12"]
+          python-version: ["3.11", "3.12", "3.13", "3.14"]
           mdanalysis-version: ["latest", "develop"]
           # Manually exclude any combinations of the test matrix that can't be run 
-          exclude:
+          #exclude:
             # The latest release of MDAnalysis only supports up to Python 3.11
             # so we exclude 3.12 from the test matrix (issue #20)
-            - python-version: "3.12"
-              mdanalysis-version: "latest"
+            #- python-version: "3.12"
+            #  mdanalysis-version: "latest"
 
     steps:
     - uses: actions/checkout@v7
@@ -56,9 +56,10 @@ jobs:
         environment-file: devtools/conda-envs/test_env.yaml
         add-pip-as-python-dependency: true
 
-        miniforge-variant: Mambaforge
+        miniforge-version: latest
         use-mamba: true
-        channels: conda-forge, defaults
+        channels: conda-forge
+        conda-remove-defaults: "true"
 
         activate-environment: pathsimanalysis-test
         auto-update-conda: true
