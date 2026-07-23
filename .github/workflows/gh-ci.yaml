@@ -49,7 +49,7 @@ jobs:
         ulimit -a
 
     - name: setup_micromamba
-      uses: mamba-org/setup-micromamba@v2
+      uses: mamba-org/setup-micromamba@v3
       with:
         environment-file: devtools/conda-envs/test_env.yaml
         environment-name: pathsimanalysis-test
