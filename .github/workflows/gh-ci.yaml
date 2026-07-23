@@ -48,30 +48,24 @@ jobs:
         df -h
         ulimit -a
 
-    # More info on options: https://github.com/conda-incubator/setup-miniconda
-    - name: Install conda dependencies
-      uses: conda-incubator/setup-miniconda@v4
+    - name: setup_micromamba
+      uses: mamba-org/setup-micromamba@v2
       with:
-        python-version: ${{ matrix.python-version }}
         environment-file: devtools/conda-envs/test_env.yaml
-        add-pip-as-python-dependency: true
-
-        miniforge-version: latest
-        use-mamba: true
-        channels: conda-forge
-        conda-remove-defaults: "true"
-
-        activate-environment: pathsimanalysis-test
-        auto-update-conda: true
-        auto-activate-base: false
-        show-channel-urls: true
+        environment-name: pathsimanalysis-test
+        create-args: >-
+          python=${{ matrix.python-version }}
+          pip
+        condarc: |
+          channels:
+            - conda-forge
 
     - name: Install MDAnalysis version
       uses: MDAnalysis/install-mdanalysis@main
       with:
         version: ${{ matrix.mdanalysis-version }}
         install-tests: true
-        installer:  conda 
+        installer:  micromamba 
         shell: bash  -l {0} 
       
     - name: Install package
@@ -85,8 +79,8 @@ jobs:
         which pip
         pip list
 
-        conda info
-        conda list
+        micromamba info
+        micromamba list
 
     - name: Run tests
       run: |
