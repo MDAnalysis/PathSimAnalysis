@@ -61,7 +61,8 @@ jobs:
             - conda-forge
 
     - name: Install MDAnalysis version
-      uses: MDAnalysis/install-mdanalysis@main
+      #uses: MDAnalysis/install-mdanalysis@main
+      uses: MDAnalysis/install-mdanalysis@44cf01496714f057c094d1e9bad304bf91fc1b17
       with:
         version: ${{ matrix.mdanalysis-version }}
         install-tests: true
