@@ -8,7 +8,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "pathsimanalysis"
 description = "Calculates the geometric similarity of molecular dynamics trajectories using path metrics such as the Hausdorff and Fréchet distances."
-license = {file = "LICENSE" }
+license = "LGPL-2.1-or-later"
+license-files = ["LICENSE"]
 authors = [
     {name = "MDAnalysis", email = "mdanalysis@numfocus.org"},
 ]
@@ -19,7 +20,6 @@ classifiers = [
     "Development Status :: 6 - Mature",
     "Environment :: Console",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
     "Programming Language :: C",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.11",
@@ -30,7 +30,7 @@ classifiers = [
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
     "MDAnalysis>=2.1.0",
     "scipy>=1.5.0",
@@ -51,11 +51,11 @@ test = [
     "pytest>=6.0",
     "pytest-xdist>=2.5",
     "pytest-cov>=3.0",
-    "MDAnalysisTests>=2.0.0",
+    "MDAnalysisTests>=2.1.0",
 ]
 doc = [
     "sphinx",
-    "sphinx_rtd_theme",
+    "mdanalysis-sphinx-theme",
 ]
 
 [project.urls]
@@ -73,7 +73,6 @@ testpaths = [
 
 [tool.black]
 line-length = 80
-extend-exclude = "versioneer.py"
 
 [tool.versioningit]
 default-version = "1+unknown"

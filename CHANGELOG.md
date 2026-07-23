@@ -16,6 +16,16 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
+## [1.2.1] -- 2026-07-23
+
+### Authors
+- orbeckst
+
+### Changed
+- In accordance with SPEC0 the minimum Python version has been
+  raised to v3.11 (PR #36)
+- Officially supports Python 3.11 - 3.14
+
 ## [1.2.0] -- 2024-11-22
 
 ### Authors
